@@ -12,6 +12,13 @@
 		39AD3EF41F88DE390043F468 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39AD3EF21F88DE390043F468 /* MainMenu.xib */; };
 		39AD3F001F88DE390043F468 /* CollectionViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39AD3EFF1F88DE390043F468 /* CollectionViewTests.swift */; };
 		39AD3F0B1F88DE390043F468 /* CollectionViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39AD3F0A1F88DE390043F468 /* CollectionViewUITests.swift */; };
+		39AD3F1A1F88DE650043F468 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39AD3F191F88DE650043F468 /* BaseView.swift */; };
+		39AD3F1C1F88DE7D0043F468 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39AD3F1B1F88DE7D0043F468 /* CollectionViewController.swift */; };
+		39AD3F1E1F88DE890043F468 /* CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39AD3F1D1F88DE890043F468 /* CollectionView.swift */; };
+		39AD3F211F88DEA70043F468 /* AdapterCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39AD3F201F88DEA70043F468 /* AdapterCollectionView.swift */; };
+		39CD197D1F88E3E00031C934 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39CD197C1F88E3A70031C934 /* User.swift */; };
+		39CD197F1F88E4470031C934 /* UserCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39CD197E1F88E4470031C934 /* UserCellView.swift */; };
+		39CD19811F88E4520031C934 /* UserCollectionViewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39CD19801F88E4520031C934 /* UserCollectionViewItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +51,13 @@
 		39AD3F061F88DE390043F468 /* CollectionViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CollectionViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		39AD3F0A1F88DE390043F468 /* CollectionViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewUITests.swift; sourceTree = "<group>"; };
 		39AD3F0C1F88DE390043F468 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		39AD3F191F88DE650043F468 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		39AD3F1B1F88DE7D0043F468 /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		39AD3F1D1F88DE890043F468 /* CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionView.swift; sourceTree = "<group>"; };
+		39AD3F201F88DEA70043F468 /* AdapterCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdapterCollectionView.swift; sourceTree = "<group>"; };
+		39CD197C1F88E3A70031C934 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		39CD197E1F88E4470031C934 /* UserCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCellView.swift; sourceTree = "<group>"; };
+		39CD19801F88E4520031C934 /* UserCollectionViewItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCollectionViewItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +109,12 @@
 			isa = PBXGroup;
 			children = (
 				39AD3EEE1F88DE390043F468 /* AppDelegate.swift */,
+				39CD197B1F88E3A70031C934 /* ViewModel */,
+				39AD3F181F88DE5D0043F468 /* Base */,
+				39AD3F1B1F88DE7D0043F468 /* CollectionViewController.swift */,
+				39AD3F1D1F88DE890043F468 /* CollectionView.swift */,
+				39AD3F221F88E2930043F468 /* Subviews */,
+				39AD3F1F1F88DEA20043F468 /* Adapter */,
 				39AD3EF01F88DE390043F468 /* Assets.xcassets */,
 				39AD3EF21F88DE390043F468 /* MainMenu.xib */,
 				39AD3EF51F88DE390043F468 /* Info.plist */,
@@ -119,6 +139,39 @@
 				39AD3F0C1F88DE390043F468 /* Info.plist */,
 			);
 			path = CollectionViewUITests;
+			sourceTree = "<group>";
+		};
+		39AD3F181F88DE5D0043F468 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				39AD3F191F88DE650043F468 /* BaseView.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		39AD3F1F1F88DEA20043F468 /* Adapter */ = {
+			isa = PBXGroup;
+			children = (
+				39AD3F201F88DEA70043F468 /* AdapterCollectionView.swift */,
+			);
+			path = Adapter;
+			sourceTree = "<group>";
+		};
+		39AD3F221F88E2930043F468 /* Subviews */ = {
+			isa = PBXGroup;
+			children = (
+				39CD197E1F88E4470031C934 /* UserCellView.swift */,
+				39CD19801F88E4520031C934 /* UserCollectionViewItem.swift */,
+			);
+			path = Subviews;
+			sourceTree = "<group>";
+		};
+		39CD197B1F88E3A70031C934 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				39CD197C1F88E3A70031C934 /* User.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -254,7 +307,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				39AD3F211F88DEA70043F468 /* AdapterCollectionView.swift in Sources */,
+				39AD3F1C1F88DE7D0043F468 /* CollectionViewController.swift in Sources */,
+				39CD197D1F88E3E00031C934 /* User.swift in Sources */,
+				39CD197F1F88E4470031C934 /* UserCellView.swift in Sources */,
+				39CD19811F88E4520031C934 /* UserCollectionViewItem.swift in Sources */,
 				39AD3EEF1F88DE390043F468 /* AppDelegate.swift in Sources */,
+				39AD3F1E1F88DE890043F468 /* CollectionView.swift in Sources */,
+				39AD3F1A1F88DE650043F468 /* BaseView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
